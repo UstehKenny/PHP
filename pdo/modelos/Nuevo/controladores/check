@@ -1,0 +1,10 @@
+<?php 
+/*	session_start();
+	session_destroy();
+*/	
+
+	if( !isset($_SESSION['usuario']) ){
+	//$_SESSION['usuario'] = "Guillermo";
+	setcookie('cookie_usuario','user2345',time()-1);
+	header("location:../vistas/index.php");
+?>
